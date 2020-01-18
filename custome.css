@@ -1,0 +1,26 @@
+/** all **/
+html * {
+   margin: 0;
+   padding: 0;
+}
+
+/** element **/
+button,
+input[type=button] {
+   margin: 5px;
+   padding: 5px;
+   background-color: white;
+   color: gray;
+}
+button:hover,
+input[type=button]:hover {
+   background: gray;
+   color: white;
+}
+
+/** common **/
+.c-center { text-align: center; }
+.c-fg-gray { color: gray; }
+.c-bg-gray { background-color: gray; }
+
+
