@@ -60,6 +60,46 @@ input[type=button]:hover {
    text-decoration: line-through;
 }
 
+.c-main .c-content {
+   position: relative;
+   min-height: 150px;
+}
+
+.c-main .c-content .c-content-table {
+   max-width: 100vw;
+   overflow-x: auto;
+}
+
+.c-main .c-content .c-content-table table#c-table {
+   border-collapse: collapse;
+}
+
+.c-main .c-content .c-content-table table#c-table tr {
+   min-height: 25px;
+   height: 25px;
+}
+
+.c-main .c-content .c-content-table table#c-table td {
+   min-height: 25px;
+   min-width: 25px;
+   border: darkgray 1px solid;
+   box-sizing: border-box;
+}
+
+.c-main .c-content .c-content-table table#c-table[te-top-as-header='true'] tr:nth-of-child(1) {
+   background-color: lightgray;
+}
+
+.c-main .c-content .c-buttons {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.c-main .c-content .c-buttons input[type=button] { }
+.c-main .c-content .c-buttons button {
+   display: block;
+}
+
 
 /** footer **/
 .c-footer {
