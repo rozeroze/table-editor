@@ -40,5 +40,23 @@ var c_export_tsv = () => {
    // textarea
    c_input = document.querySelector('#c-input');
    c_output = document.querySelector('#c-output');
+   // query
+   c_query = document.querySelector('#c-query');
+   c_query.addEventListener('keydown', event => {
+      event.stopPropagation();
+      switch (event.keyCode) {
+         case 13: // Enter
+            te.execute(te.parse(event.target.innerText));
+            event.target.innerText = '';
+            document.activeElement.blur();
+            break;
+         case 27: // Escape
+            event.target.innerText = '';
+            document.activeElement.blur();
+            break;
+         default:
+            break;
+      }
+   });
 })()
 
