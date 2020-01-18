@@ -23,4 +23,34 @@ input[type=button]:hover {
 .c-fg-gray { color: gray; }
 .c-bg-gray { background-color: gray; }
 
+/** header **/
+.c-header {
+   border: lightgray 1px solid;
+   border-radius: 0 0 10px 10px;
+   padding: 2vh 2vw;
+}
+.c-header:hover {
+   box-shadow: lightgray 2px 2px 2px 2px;
+}
+
+/** main **/
+
+
+/** footer **/
+.c-footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100vw;
+}
+.c-footer:hover {
+   box-shadow: gray 5px 5px 5px 5px;
+}
+
+.c-footer #c-query {
+   min-height: 24px;
+   border: lightgray 1px solid;
+   border-radius: 5px;
+   background-color: white;
+}
 
