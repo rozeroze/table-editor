@@ -100,6 +100,23 @@ input[type=button]:hover {
    display: block;
 }
 
+@media (max-width: 600px) {
+   .c-main .c-content .c-buttons button {
+      width: 35px;
+   }
+   .c-main .c-content .c-buttons button[c-short-text]::after {
+      content: attr(c-short-text);
+   }
+}
+@media (min-width: 600px) {
+   .c-main .c-content .c-buttons button {
+      width: 120px;
+   }
+   .c-main .c-content .c-buttons button[c-wide-text]::after {
+      content: attr(c-wide-text);
+   }
+}
+
 
 /** footer **/
 .c-footer {
