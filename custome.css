@@ -34,6 +34,31 @@ input[type=button]:hover {
 }
 
 /** main **/
+.c-main {
+   padding: 2vh 2vw;
+   margin-bottom: 25px;
+}
+
+.c-main hr {
+   margin: 5px;
+}
+
+.c-main .c-property {
+   padding: 5px;
+}
+.c-main .c-property input[type=checkbox] {
+   display: none;
+}
+.c-main .c-property input[type=checkbox]+label {
+   user-select: none;
+}
+.c-main .c-property input[type=checkbox]:checked+label {
+   color: black;
+}
+.c-main .c-property input[type=checkbox]:not(:checked)+label {
+   color: lightgray;
+   text-decoration: line-through;
+}
 
 
 /** footer **/
