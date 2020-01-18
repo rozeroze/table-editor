@@ -24,4 +24,18 @@ var c_export_tsv = () => {
    c_output.value = data.join('¥n');
 };
 
+(() => {
+   // checkbox
+   c_editable = document.querySelector('#c-table-editable');
+   c_editable.checked = true; // hard coding: initial -> true
+   c_editable.addEventListener('change', event => {
+      te.set('editable', event.target.checked);
+      te.set_editable();
+   });
+   c_asheader = document.querySelector('#c-top-as-header');
+   c_asheader.checked = true; // hard coding: initial -> true
+   c_asheader.addEventListener('change', event => {
+      te.set('top-as-header', event.target.checked);
+   });
+})()
 
