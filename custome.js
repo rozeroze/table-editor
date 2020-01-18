@@ -58,5 +58,13 @@ var c_export_tsv = () => {
             break;
       }
    });
+   // event
+   document.body.addEventListener('keydown', event => {
+      if (event.keyCode == 186) {
+         // colon :
+         event.preventDefault();
+         c_query.focus();
+      }
+   });
 })()
 
