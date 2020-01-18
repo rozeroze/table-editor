@@ -37,5 +37,8 @@ var c_export_tsv = () => {
    c_asheader.addEventListener('change', event => {
       te.set('top-as-header', event.target.checked);
    });
+   // textarea
+   c_input = document.querySelector('#c-input');
+   c_output = document.querySelector('#c-output');
 })()
 
