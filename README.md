@@ -4,5 +4,5 @@ this is plugin make easily edit table on browser
 
 # demo
 
-rozeroze.github.io/table-editor/te-json.html
+https://rozeroze.github.io/table-editor/te-json.html
 
